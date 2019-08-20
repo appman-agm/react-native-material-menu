@@ -22,7 +22,7 @@ const STATES = {
 
 const ANIMATION_DURATION = 300;
 const EASING = Easing.bezier(0.4, 0, 0.2, 1);
-const SCREEN_INDENT = 8;
+const SCREEN_INDENT = 0;
 
 class Menu extends React.Component {
   _container = null;
