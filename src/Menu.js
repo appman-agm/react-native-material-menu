@@ -167,8 +167,7 @@ class Menu extends React.Component {
         translateY: Animated.multiply(menuSizeAnimation.y, -1),
       });
 
-      top = windowHeight - SCREEN_INDENT;
-      top = Math.min(windowHeight - SCREEN_INDENT, top + buttonHeight);
+      top = Math.min(windowHeight - SCREEN_INDENT, top + buttonHeight - this.props.inputHeight);
     } else if (top < SCREEN_INDENT) {
       top = SCREEN_INDENT;
     }
